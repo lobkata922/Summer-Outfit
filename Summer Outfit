@@ -1,0 +1,38 @@
+degrece = int(input())
+time_day_nights = input()
+
+outfit = ""
+shoes = ""
+
+if time_day_nights == "Morning":
+    if 10 <= degrece <= 18:
+        Outfit = "Sweatshirt"
+        Shoes = "Sneakers"
+    elif 18 <= degrece <= 24:
+        Outfit = "Shirt"
+        Shoes = "Moccasins"
+    elif degrece >= 25:
+        Outfit = "T-Shirt"
+        Shoes = "Sandals"
+elif time_day_nights == "Afternoon":
+    if 10 <= degrece <= 18:
+        Outfit = "Shirt"
+        Shoes = "Moccasins"
+    elif 18 <= degrece <= 24:
+        Outfit = "T-Shirt"
+        Shoes = "Sandals"
+    elif degrece >= 25:
+        Outfit = "Swim Suit"
+        Shoes = "Barefoot"
+elif time_day_nights == "Evening":
+    if 10 <= degrece <= 18:
+        Outfit = "Shirt"
+        Shoes = "Moccasins"
+    elif 18 <= degrece <= 24:
+        Outfit = "Shirt"
+        Shoes = "Moccasins"
+    elif degrece >= 25:
+        Outfit = "Shirt"
+        Shoes = "Moccasins"
+
+print(f"It's {degrece} degrees, get your {Outfit} and {Shoes}.")
